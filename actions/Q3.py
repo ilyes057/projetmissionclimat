@@ -18,7 +18,7 @@ class Window(tk.Toplevel):
         self.title('Q3 : départements pour une région donnée (version dynamique)')
         display.defineGridDisplay(self, 3, 3)
         self.grid_rowconfigure(3, weight=10) #On donne un poids plus important à la dernière ligne pour l'affichage du tableau
-        ttk.Label(self, text="On a repris le code de F2. Modifier l'interface pour proposer un choix dynamique de la région (par exemple un menu déroulant avec les valeurs extraites de la base, ou toute autre idée).",
+        ttk.Label(self, text="On a repris le code de F2. Modifier l'interface pour proposer un choix de la région sans saisie manuelle (par exemple un proposer un menu déroulant avec les valeurs extraites de la base, ou toute autre idée).",
                   wraplength=500, anchor="center", font=('Helvetica', '10', 'bold')).grid(sticky="we", row=0,columnspan=3)
 
         # Affichage du label, de la case de saisie et du bouton valider
